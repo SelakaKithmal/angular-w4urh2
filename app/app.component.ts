@@ -69,6 +69,7 @@ export class AppComponent {
     }
   ];
 
+
   public valueAxes: any[] = [
     {
       name: "km",
@@ -92,5 +93,5 @@ export class AppComponent {
   // Right alignment is done by specifying a
   // crossing value greater than or equal to
   // the number of categories.
-  public crossingValues: number[] = [20, 0, 10, 10];
+  public crossingValues: number[] = [0, 100, 0, 100];
 }
