@@ -6,7 +6,7 @@ import { mockData } from "./weather-data";
   template: `
     <kendo-chart>
       <kendo-chart-title text="Hybrid car mileage report"></kendo-chart-title>
-       <kendo-chart-legend position="top"></kendo-chart-legend>
+       
 
       <kendo-chart-value-axis>
         <kendo-chart-value-axis-item
@@ -62,13 +62,6 @@ export class AppComponent {
     },
     {
       type: "line",
-      data: [30, 38, 40, 32, 42],
-      name: "mpg",
-      color: "#ec5e0a",
-      axis: "mpg"
-    },
-    {
-      type: "line",
       data: [7.8, 6.2, 5.9, 7.4, 5.6],
       name: "l/100 km",
       color: "#4e4141",
@@ -78,21 +71,11 @@ export class AppComponent {
 
   public valueAxes: any[] = [
     {
-      title: "miles",
-      min: 0,
-      max: 100
-    },
-    {
       name: "km",
       title: "km",
       min: 0,
       max: 161,
       majorUnit: 32
-    },
-    {
-      name: "mpg",
-      title: "miles per gallon",
-      color: "#ec5e0a"
     },
     {
       name: "l100km",
@@ -109,5 +92,5 @@ export class AppComponent {
   // Right alignment is done by specifying a
   // crossing value greater than or equal to
   // the number of categories.
-  public crossingValues: number[] = [0, 0, 10, 10];
+  public crossingValues: number[] = [20, 0, 10, 10];
 }
